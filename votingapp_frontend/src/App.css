@@ -1,0 +1,173 @@
+.App {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to bottom, #f2f2f2, #fff);
+}
+
+.App-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #333;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 15s ease-in-out;
+  }
+}
+
+.App-header {
+  background-color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.App-link {
+  color: #337ab7;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.App-link:hover {
+  color: #23527c;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1.2);
+  }
+}
+
+.nav-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.nav-ul li {
+  margin-right: 20px;
+}
+
+.nav-ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-ul li a:hover {
+  color: #337ab7;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.footer {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.login-container, .product-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-container input, .product-container input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.login-container button, .product-container button {
+  width: 100%;
+  padding: 15px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.login-container button:hover, .product-container button:hover {
+  background-color: #23527c;
+}
+
+.products-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: table;
+  width: 100%;
+}
+
+.products-list ul li {
+  display: table-cell;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.products-list ul li:nth-child(1) {
+  width: 10%; /* adjust the width of the first column */
+}
+
+.products-list ul li:nth-child(2) {
+  width: 30%; /* adjust the width of the second column */
+}
+
+.products-list ul li:nth-child(3) {
+  width: 30%; /* adjust the width of the third column */
+}
+
+/* make it responsive */
+@media (max-width: 768px) {
+  .products-list ul li {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-list ul li {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
